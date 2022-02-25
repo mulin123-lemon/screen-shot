@@ -1,0 +1,96 @@
+.img_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.img_box canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.img_box canvas#clipcanvas {
+  z-index: 2;
+}
+.img_box canvas#drawcanvas {
+  z-index: 1;
+}
+.img_box img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.img_group_item {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 99999;
+}
+.img_group_item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.btn_box {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(-100%, 0);
+  z-index: 9999;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #000000;
+  user-select: none;
+}
+.btn_box .btn_cancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 100%;
+  color: #76e500;
+  border-radius: 4px 0 0 4px;
+}
+.btn_box .btn_cancel svg {
+  width: 15px;
+  height: 15px;
+  fill: red;
+}
+.btn_box .br {
+  width: 1px;
+  height: 18px;
+  margin-top: 7px;
+  background-color: #ffffff;
+  opacity: 0.1;
+}
+.btn_box .btn_sure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #76e500;
+  width: 37px;
+  height: 100%;
+  border-radius: 0 4px 4px 0;
+}
+.btn_box .btn_sure svg {
+  width: 19px;
+  height: 14px;
+  margin-right: 3px;
+  fill: #76e500;
+}
+.btn_box .btn_cancel:hover,
+.btn_box .btn_sure:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

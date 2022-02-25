@@ -1,0 +1,7 @@
+.screen{
+    background-image: url('/assets/image/tree.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
